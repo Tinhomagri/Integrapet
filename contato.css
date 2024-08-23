@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    position:fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+
+
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav, .nav_item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+header {
+    background-color: #fff;
+    backdrop-filter:blur(4px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav_item {
+    column-gap: 25px;
+}
+
+.nav_logo, .nav_link, .button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    transition: 0.3s;
+}
+
+.nav_link:hover {
+    color: black;
+    font-size: large;
+    text-decoration: underline;
+
+}
+
+
+
+.button_login {
+    color: #fff;
+    padding: 6px 24px;
+    background: #65b5ca;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button_login a{
+    color: #fff;
+    
+}
+
+.button_login:hover {
+    color: #fff;
+    padding: 6px 24px;
+    background: #558a97;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.button_login:active {
+    transform: scale(0.98);
+}
+
+
+
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px; /* Reduzindo o preenchimento */
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 100%; /* Aumentando a largura máxima */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+fieldset label,
+fieldset input,
+fieldset textarea,
+fieldset span,
+fieldset div {
+    display: block;
+    margin-bottom: 10px; /* Adiciona um espaço entre cada elemento */
+}
+
+
+fieldset {
+    margin-top: 30px;
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+textarea#message {
+    height: 150px;
+    resize: vertical;
+}
+
+.spacer {
+    height: 80px; 
+}
+
+#sendMessageButton  {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #65b5ca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    
+}
+
+button:hover {
+    background-color: #3b8fa9;
+}
+
+
+#contactInfo, #successMessage {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da; /* Cor de fundo para destacar */
+    border: 1px solid #f5c6cb; /* Borda vermelha */
+    border-radius: 5px;
+}
+
+#contactInfo p, #successMessage p {
+    margin: 5px 0;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer_content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.footer_content p {
+    margin-bottom: 5px; 
+}

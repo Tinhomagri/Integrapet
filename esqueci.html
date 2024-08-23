@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci Minha Senha</title>
+    <link rel="stylesheet" href="esqueci.css">
+</head>
+<body>
+
+
+    <header class="header">
+        <nav class="nav">
+            <a href="home.html" class="nav_logo">IntegraPet</a>
+            <ul class="nav_itens">
+                <li class="nav_item">
+                    <a href="home.html" class="nav_link">Inicial</a>
+                    <a href="contato.html" class="nav_link">Contato</a>
+                    <a href="#" class="nav_link">Meus Pets</a>
+                </li>
+            </ul>
+            <button class="button_login" id="form-open"><a href="projeto.html">Login</a></button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Esqueci Minha Senha</h2>
+        <p>Por favor, insira seu endereço de e-mail registrado abaixo. Um link para redefinir sua senha será enviado para o seu e-mail.</p>
+        <form id="resetForm">
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+            <button type="submit">Enviar Link de Redefinição</button>
+        </form>
+        <div id="mensagem"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <p>&copy; 2024 IntegraPet. Todos os direitos reservados.</p>
+            <p>Endereço: Raposo Tavares, 123 - Cidade Universitária</p>
+            <p>Telefone: (15) 1234-5678 | Email: contato@integrapet.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

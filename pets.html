@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/matthew-kelleigh/mac-town-vol2/16/Dog-House-icon.png" width="16" height="16">
+    <link rel="stylesheet" href="pets.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegraPet | Pets</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="home.html" class="nav_logo">IntegraPet</a>
+            <ul class="nav_itens">
+                <li class="nav_item">
+                    <a href="home.html" class="nav_link">Inicial</a>
+                    <a href="contato.html" class="nav_link">Contato</a>
+                    <a href="#" class="nav_link">Meus Pets</a>
+                </li>
+            </ul>
+            <button class="button_login" id="form-open"><a href="projeto.html">Login</a></button>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h2>Cadastro de Pet</h2>
+            <form action="cadastrarpet.php" method="POST" class="pet-form" enctype="multipart/form-data">
+                <div class="form-group profile-pic-container">
+                    <label for="foto">Foto do Pet:</label>
+                    <div class="profile-pic">
+                        <img src="default.jpg" alt="" id="pet-image">
+                    </div>
+                    <input type="file" id="foto" accept="image/*" onchange="previewFile()">
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome do Pet:</label>
+                    <input type="text" id="nomepet" name="nomepet" required>
+                </div>
+                <div class="form-group">
+                    <label for="especie">Espécie:</label>
+                    <input type="text" id="especiepet" name="especiepet" required>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idadepet" name="idadepet" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexopet" name="sexopet" required>
+                        <option value="macho">Macho</option>
+                        <option value="femea">Fêmea</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="corpet" name="corpet" required>
+                </div>
+                <div class="form-group">
+                    <label for="porte">Porte:</label>
+                    <select id="portepet" name="portepet" required>
+                        <option value="pequeno">Pequeno</option>
+                        <option value="medio">Médio</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricaopet" name="descricaopet" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="button">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function previewFile() {
+            const preview = document.getElementById('pet-image');
+            const file = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+
+            reader.onloadend = function () {
+                preview.src = reader.result;
+            };
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "default.jpg"; 
+            }
+        }
+    </script>
+</body>
+</html>
+
+    

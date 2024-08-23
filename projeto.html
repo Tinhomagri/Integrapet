@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegraPet Login | Cadastre-se</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/matthew-kelleigh/mac-town-vol2/16/Dog-House-icon.png" width="16" height="16">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="home.html" class="nav_logo">IntegraPet</a>
+        <ul class="nav_itens">
+            <li class="nav_item">
+                <a href="home.html" class="nav_link">Inicial</a>
+                <a href="contato.html" class="nav_link">Contato</a>
+                <a href="pets.html" class="nav_link">Meus Pets</a>
+            </li>
+        </ul>
+
+            <button class="button_login" id="form-open">Login</button>
+        </nav>
+    </header>
+
+
+    <section class="home">
+        <div class="form_container">
+            <i class="form_close">x</i>
+
+            <div class="form login_form">
+                    <h2>Login</h2>
+                    <form name = "login" action = "loginpj.php" method = "POST">
+
+                    <div class="input_box">
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                        <i class="uil-email"><img src="./Custom-Icon-Design-Mono-General-2-Mail.48.png" alt="icon email" width="17px" height="17px"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" id="senha" name="senha" placeholder="Insira a sua senha" required>
+                        <i class="uil-lock"><img src="./2889676.png" alt="icon password" width="17px" height="17px"></i>
+                        <i class="uil-eye"><img src="./2767146.png" alt="icon eye" width="17px" height="17px"></i>
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">Lembrar senha</label>
+                        </span>
+                        <a href="esqueci.html" class="forgot_pw">Esqueci minha senha</a>
+                    </div>
+
+                    <button class="button_logar">Login</button>
+
+
+                    <div class="login_signup">
+                        Você ainda não tem uma conta? <a href="#" id="signup">Cadastre-se agora!</a>
+                    </div>
+                </form>
+            </div>
+                <div class="form signup_form">
+                        <h2>Cadastre-se</h2>
+                        <form name = "cadastro" action = "cadastrarpj.php" method = "POST">
+                        
+
+                        <div class="input_box">
+                            <input type="text" name="nome" placeholder="Insira seu nome" required>
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="email" name="email" placeholder="Insira um email" required>
+                            <i class="uil-email"><img src="./Custom-Icon-Design-Mono-General-2-Mail.48.png" alt="icon email" width="20px" height="20px"></i>
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="password" name="senha" placeholder="Crie sua senha" required>
+                            <i class="uil-lock"><img src="./2889676.png" alt="icon password" width="20px" height="20px"></i>
+                            <i class="uil-eye"><img src="./2767146.png" alt="icon eye" width="25px" height="25px"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" name="confirmar" placeholder="Confirme a sua senha" required>
+                            <i class="uil-lock"><img src="./2889676.png" alt="icon password" width="20px" height="20px"></i>
+                            <i class="uil-eye"><img src="./2767146.png" alt="icon eye" width="25px" height="25px"></i>
+                        </div>
+
+                        <label class="container" for="termosCheckbox" id="termosLabel">
+                            Eu aceito os <a href="#" id="abrirLGPD">termos e condições</a>
+                            <input type="checkbox" id="termosCheckbox" name="termos" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                        
+                          <div class="lgpd-content" id="lgpdContent">
+                           
+                            <h2>LGPD - Lei Geral de Proteção de Dados</h2>
+                            <p>
+                              A Lei Geral de Proteção de Dados (LGPD) é uma legislação que regula o tratamento de dados pessoais por organizações e empresas, com o objetivo de proteger a privacidade e garantir os direitos das pessoas.
+                            </p>
+                            <br>
+                            <p>
+                              A LGPD estabelece princípios e diretrizes que devem ser seguidos pelas empresas ao coletar, armazenar, processar e compartilhar dados pessoais de indivíduos. Entre os principais pontos da LGPD estão o consentimento explícito para o uso dos dados, a transparência no tratamento das informações, a garantia dos direitos dos titulares dos dados e a responsabilidade das empresas em proteger esses dados.
+                            </p>
+                            <br>
+                            <p id="lgpdRestante" class="hidden">
+                                Além disso, a LGPD define os direitos dos titulares dos dados, como o acesso aos seus dados pessoais, a correção de informações incompletas, inexatas ou desatualizadas, a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei, e a portabilidade dos dados para outro fornecedor de serviço ou produto.
+                            </p>
+                            <br>
+                            <p>
+                              As empresas que não cumprirem as disposições da LGPD estarão sujeitas a penalidades que incluem advertência, bloqueio dos dados pessoais objeto da infração até a regularização da situação e eliminação dos dados pessoais relacionados à infração.
+                            </p>
+                            <br>
+                            <p>
+                              É importante que as empresas estejam em conformidade com a LGPD para garantir a proteção dos dados pessoais e evitar sanções legais.
+                            </p>
+                            <a href="#" id="lerMais">Leia mais</a>
+                          </div>
+    
+    
+                        <button class="button_finalizar">Finalizar!</button>
+    
+                        <div class="login_signup">
+                           Já possui uma conta? <a href="#" id="login">Login</a>
+                        </div>
+                    </form>
+                </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_content">
+            <p>&copy; 2024 IntegraPet. Todos os direitos reservados.</p>
+            <p>Endereço: Raposo Tavares, 123 - Cidade Universitária</p>
+            <p>Telefone: (15) 1234-5678 | Email: contato@integrapet.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
